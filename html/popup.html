@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-ITRA</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <style>
+        .btn-outline-secondary {
+            --bs-btn-color: #e32119;
+            --bs-btn-border-color: #e32119;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #e32119;
+            --bs-btn-hover-border-color: #e32119;
+            --bs-btn-focus-shadow-rgb: 108, 117, 125;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #e32119;
+            --bs-btn-active-border-color: #e32119;
+            --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #e32119;
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: #e32119;
+            --bs-gradient: none;
+        }
+        
+        .btn-outline-success {
+            --bs-btn-color: #152048;
+            --bs-btn-border-color: #152048;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #152048;
+            --bs-btn-hover-border-color: #152048;
+            --bs-btn-focus-shadow-rgb: 25, 135, 84;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #152048;
+            --bs-btn-active-border-color: #152048;
+            --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #152048;
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: #152048;
+            --bs-gradient: none;
+        }
+    </style>
+    <script src="../js/popup.js" defer></script>
+</head>
+
+
+<body>
+    <div class="card" style="width: 25rem;">
+        <div class="card-header p-0">
+            <img src="./Merkle _ CP_Icon.png" class="col-2">
+            <strong class="col-10">Internal Traffic Rule Automation.</strong>
+        </div>
+
+        <div class="card-body row justify-content-evenly">
+            <h5 class="card-title ps-4">Account Name: </h5>
+
+            <p class="card-subtitle ps-4 mb-2 text-muted" id="acc-name">None</p>
+
+            <button type="button" class="mt-2 btn btn-outline-secondary btn-md col-5" id="copy-btn">Copy</button>
+
+            <button type="button" class="mt-2 btn btn-outline-success btn-md col-5" id="paste-btn">Paste</button>
+        </div>
+    </div>
+</body>
+
+</html>
