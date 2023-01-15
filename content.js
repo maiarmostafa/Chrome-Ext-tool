@@ -16,7 +16,8 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 function copy() {
   var sheetId = window.location.pathname.split("/")[3];
   var base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
-  var sheetName = encodeURIComponent('UA - IP Filters');
+//   var sheetName = encodeURIComponent('UA - IP Filters');
+  var sheetName = encodeURIComponent(`${window.document.querySelector('.docs-title-input').value}`);
   var query = encodeURIComponent('Select *');
   var url = `${base}&sheet=${sheetName}&tq=${query}`;
 
